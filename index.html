@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title> Time </title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Rubik+Glitch&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #000000;
+            color: aliceblue;
+            font-family: "Badeen Display", system-ui;
+            /* font-family: "Rubik Glitch", system-ui; */
+            font-weight: 400;
+            min-height: 100vh;
+            max-height: 100vh;
+            min-width: 100vw;
+            max-width: 100vw;
+            font-size: 6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: auto;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+
+            display: block;
+            background: #f0f0f0 url("https://plus.unsplash.com/premium_photo-1661964177687-57387c2cbd14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870") no-repeat center center / cover fixed padding-box content-box;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+
+            -webkit-filter: blur(20px);
+            -moz-filter: blur(20px);
+            -o-filter: blur(20px);
+            -ms-filter: blur(20px);
+            filter: blur(20px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="time">
+        <span id="hour">00</span> :
+        <span id="min">00</span> :
+        <span id="sec">00</span>
+    </h1>
+
+    <script src="js/index.js" type="module"> </script>
+</body>
+
+</html>
